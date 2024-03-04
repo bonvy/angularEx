@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {LoadInfoService} from "./load-info.service";
+import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
+import {debounceTime, filter} from "rxjs";
+import {Router, RouterOutlet} from "@angular/router";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +11,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.less'
 })
 export class AppComponent {
-  title = 'prova';
+
+
+
+
 }
